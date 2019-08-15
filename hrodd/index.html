@@ -1,0 +1,576 @@
+ <!DOCTYPE html>
+<!--
+              ,;r;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;r;,                 
+             .2@@@Superviser:Parick Kuti@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@h,
+             .@@Project+Managers:@@Michael##Phillips@Deborah###Allah@@@@@@@@@@@@@@@@@@@@@@*,
+             .X@@@Lead+Programmers:Gilbert_Gadzekpo@@@Ian Allotey@@@@@@@@@@@@@@@@@@@@@@@@@&,                
+              Developers@@BXi3@@@Alex#Tenkorang@@@@H2iG@@@@Emmanuel#Asare@@@A5Sh#@@@@@@@@@X.                
+              r#@@#####@@B2;;iA@@###############@@H5;;iH@@@##############@MXr;iA@@######@@2.                
+              r#@@#####@@M2r;i&#@@##############@@BXrri&#@@#############@@#Xr;i&#@@#####@@2.                
+              r#@@#####@@@ASrSH@@@##############@@@B5s2M@@@#############@@@ASr2B@@@@####@@2.                
+              r#@@###B3XH@@&29#BX3H#@#######@#H99B@@&5&#H9hB##########M9XH@M929#M9XH####@@2.                
+              r#@@##@#Girri5Siir;5M@@@######@@#&SrrS5iii;r2M@@@######@@hsrsS5Sisr;SB@@##@@2.                
+              r#@@###@@#2;;rsrrih@@@##########@@MS;rrsrri&@@@#########@@M2rrssrriG@@@#M#@@2.                
+              r#@@#HX5G#@BXisi2A@#h23H@@####A55G##H2iss2B@M923B@####HX5G#@B3iri2A@#hXhH#@@2.                
+              r#@@@#2;;s3A9SiS525r;s&#@@##@@#Xr;s3&XSii22S;;s&#@###@#X;:s3&9SiS225r;sA#@@@2.                
+              r#@@@@@B5;;;sSSir;;rX#@@@####@@@M5;;;sSSir;;r3#@@####@@@H5;;;sS5Ss;;rX#@@@@@2.                
+              r#@#AA#@@#G2iiiSSX&#@#HM####MAA#@@#G5iiiiSXA#@#BM####AA#@@Mh2iiiiSXGM@#HH#@@2.                
+              r@@@9sr2M@@#XsiSXB#H5rsh#@@@M3sr5M@@B2siS3M#H2rs&@@@#GsrX#@@MXisS3H#H2rs9#@@2.                
+              r#@@@Hi;;ri5SiSSisr;;SH@@@#@@#&s;;riSSiSSisr;;i&#@@@@@Ai;;ri55Siiisr;;SH@@@@2.                
+              r#@@@@M3sr;rsSSisrs2H@@@####@@@#hs;rriSSSsrs2A@@@###@@@M2rr;rsSSiiss2H@@@@@@2.                
+              r#@@@@@@@#&2iiiii9#@@@@#####@@@@@@#G5iiii5A@@@@@#####@@@@@#A2iiiiS9#@@@@##@@2.                
+              r#@@#@@@@@@#3ssi2H@@@@#######@@@@@@@#XissX#@@@@#######@@@@@@@hsri2H@@@@###@@X.                
+              s@@@@@@@@@@@ASss2B@@@@@@@@@@@@@@@@@@@ASsr2#@@@@@@@@@@@@@@@@@@HiriXB@@@@@@@@@3,                
+              :hB&h99GG&HA2srrs2GAG99hhhh9hhhGGGAA&2sr;s2G&hhhGGGGhh99hh&AA2srrs2h&Gh99hHAr                 
+              :3Hh333939G&AAAGhh9h93333hG&AAAAAAAAA&AA&h99hh&AAAAAAAG9339h&AAA&h9hh93339A&r                 
+              r#@@@@@@@@@@@@@@@@@@@@@@@@@MAGh9hA#@@@@@@@@@@@MAhh9GAM@@@@@@@@@@@@@@@@@@@@@@2.                
+              s@@@@@@@@@@@@@@@@@@@@@@@#A2issiirri3#@@@@@@@H2srsiissiXH@@@@@@@@@@@@@@@@@@@@3,                
+              r#@@#################@#9r;r2A#@@#&i;r2M@@@A5rrSA@@@#ASrrSA@@@#############@@X.                
+              r#@@##################&irX#@@@@@@@@Hs;sA#&sr2@@@@@@@@@Bi;SB@@#############@@2.                
+              r#@@###############@@HXsSB@@@B3SX#@@Birrssi3@@@H25&#@@@Gsi&#@@############@@2.                
+              r#@@###############@@HXs5B@@@#hs;sA@@B2r;sh@@@Xr;iA@@@@Aiih#@@############@@2.                
+              r#@@###############@@@HirSH@@@@hrrX@@@hs;iA@@#2riA@@@@Air5H@@#############@@2.                
+              r#@@################@@@H5r;rS25iS&@@#G25Si5G@@@Gisi5ir;s3M@@##############@@2.                
+              r#@@##########@@@@@@@@@@@MhX2XGM@@@M5r2#@As;X@@@@A3223A@@@@@@@@@@@@@######@@2.                
+              r#@@##########Bh223hAH#@@@@@@@@@#A2siXM@@@&iri3B#@@@@@@@@#BA&9X23A#@@#####@@2.                
+              r#@@########M9s:::::;;rrsS5222ir;::rA@@92A@@X;:;rsS222Sirrr;;::::;SA#@####@@2.                
+              r#@@#########A2srrssisiiS2222225isrs3MB9X&##3rriS22XX225Siiissrrrs2A######@@2.                
+              r#@@########@@@@BB#@@@@@@@@@#@@@@@B2rrh@@@9ss9#@@@@##@@@@@@@@@#BB@@@@#####@@2.                
+              r#@@########@@@@@@@@@@@@Mh5isi5h#@@@&siGHG55M@@@B35isi2A@@@@@@@@@@@#######@@2.                
+              r#@@#########@@@@@@@@@#Xr;s3BMhssX#@@A5rrih#@@Air5A#H2r;sG@@@@@@@@########@@2.                
+              r#@@##################hssh@@@@@hsr3@@#Xr;sA@@#5rSH@@@@#2riA#@@############@@2.                
+              r#@@###############@#A2s2#@@@#3sr2M@@GSsrs2H@@H5riG@@@@Ais9M@@############@@2.                
+              r#@@###############@@#GiiA@@@#HAM@@@Aii33SsSB@@@H&A#@@@GsiA#@@############@@2.                
+              r#@@################@@#5;rh#@@@@@@#Xrr3@@#S;rG@@@@@@@#hsrX#@@#############@@2.                
+              r#@@################@@@#Xr;r2hGhXSrrSH@@@@#9r;r53hhXSrri&#@@##############@@X,                
+              ;#@@#################@@@@M3SsrrrriXA@@@@@@@@#hSsrrrri2&#@@@###############@@2.                
+              :A@@##################@@@@@@#BAH#@@@@@####@@@@@@MHHM@@@@@@################@#s.                 
+              .2#@@###################@@@@@@@@@@@@#######@@@@@@@@@@@@@##################@@M;                 
+               :h@@@#####################@@@@@@####TEAM#####@@@@@@####################@@#9:                 
+                ;#@@@########Patrick#Kuti####Michael#Philips####Deborah#Allah#########@@3,                  
+                 :h@@@@@##########Gilbert#Gadzekpo#####Ian#Allotey#################@@@@B;                   
+                   rM@@@@@@@@@#######Alex#Tenkorang#####Emmanuel##Asare#####@@@@@@@@#5.                    
+                     ,s&@@@@@@@@@@@@@################################@@@@@@@@@@@@@Ai:                       
+         ...              ,;i3H@@@@@@@@@@@@@#################@@@@@@@@@@@@M&92s;:.          .:::.            
+      ,;r;:::::,.               .:;rs59A#@@@@@@@@@#######@@@@@@A3ir;;:..               .,::,,::;r;.         
+     :rrrssr;;iXi,                       .,;i2A#@@@@@@@@@#A2r:.                       ,s25r;;;;rs;,         
+     :r;::;:,.:;;.                             .;i&#@@H5;.                     ... .   ,::,,::;;sr:         
+     .r2S;,...    ..,,..                           ,;:                        ......,,.   ...,;SG2:         
+      ;2Ah2isr;rS2s:.,:;;rr;.                                               :rir;:. ,i92issi5X9h9s.         
+      ,SA&99h&&AHhr..;h@@@@@5,                                             ,2@@@@#S..rX&Ahhh93XXS;          
+       rX3X33393G3;.,r5399Gh2s;::,,.                                 ..,,,:r5XX23hs..;5993XXX22Sr,          
+         ,;sS5229X;..;s2&M@#M#@@###H&9X25isssrrrrrrrrrrrrrrsssssiiS2XGAHBMMAh&BMBGr. :s2X2Ssr:,             
+                 .  .rS3M@@@@##@@@@@@@@@@@@#HH#@@@@#UGCSMM#@@@@@@@##@@@@@@@#AB@@@Mi,                        
+                     :riXh&AAGhAM####@@@@@@#BM@@@@@@@@#@@@MM@@@@@@@@@@@@@@#MH&9X2s:.                        
+                            .,;rsii5Xh&&&AA&GGGh&ABBBBBBMBAAHBAAHH&9X5Sis;:,.                               
+                                        .,,:::,,,::::;;:::::::::,.                                          
+ -->
+
+
+<!--[if IE 7 ]><html class="ie ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+  
+<!-- Mirrored from www.ug.edu.gh/hrodd/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 09:25:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Human Resource and Organizational Development Directorate </title>
+    <style type="text/css" media="all">
+@import url("https://www.ug.edu.gh/hrodd/modules/system/system.base.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/modules/system/system.menus.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/modules/system/system.messages.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/modules/system/system.theme.css?p87ld2");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ug.edu.gh/hrodd/sites/all/modules/date/date_api/date.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/modules/field/theme/field.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/modules/node/node.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/modules/user/user.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/sites/all/modules/views/css/views.css?p87ld2");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ug.edu.gh/hrodd/sites/all/modules/ctools/css/ctools.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/sites/hrodd/modules/layer_slider/css/layerslider.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/sites/all/libraries/fontawesome/css/font-awesome.css?p87ld2");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ug.edu.gh/hrodd/sites/all/themes/orid/stylesheets/ug-style-min.css?p87ld2");
+@import url("https://www.ug.edu.gh/hrodd/sites/all/themes/orid/stylesheets/orid.css?p87ld2");
+</style>
+	
+
+
+      
+
+      <!-- menu font -->
+            <style type="text/css">
+        .custom_menu #menu > ul > li > a,#menu {
+          font-family:Open Sans;
+                  }
+      </style>
+      <!-- // menu font -->
+
+      <!-- menu font size -->
+            <style type="text/css">
+        #menu > ul > li > a{
+          font-size: 15px ;
+        }
+        #menu > ul > li ul > li > a{
+          font-size: 14px ;
+        }
+      </style>
+      <!-- // menu font size -->
+
+
+      <!-- main color -->
+            <style type="text/css">
+        a:hover, a:focus{
+          color: #0AD1E5 ;
+        }
+        .button:hover,
+        a:hover.button,
+        button:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,	
+        input[type="button"]:hover,
+        .button_hilite, 
+        a.button_hilite,
+        .button_hilite,
+        a.button_hilite{
+          color: #FFF;
+          background-color: #0AD1E5;
+        }
+        .section_big_title h1 strong,
+        .section_featured_texts h3 a:hover,
+        .breadcrumb a:hover,
+        .post_meta a:hover,
+        #footer a:hover {
+          color: #0AD1E5 ;
+        }
+        .portfolio_filter div.current,
+        .next:hover,.prev:hover,
+        .pagination .links a:hover,
+        .info h2, 
+        .h2.ls-s2,
+        jcarousel-next-horizontal:hover, 
+        .jcarousel-prev-horizontal:hover{
+          background-color: #0AD1E5 ;
+        }
+        .footer_pic img:hover{
+          border: 1px solid #0AD1E5;
+        }
+      </style>
+      <!-- // main color -->
+
+      <!-- heading font -->
+            <style type="text/css">
+        h1, h2, h3, h4, h5, .title, .section_big_title h1, .heading, #footer h3,
+        .page_heading h1{
+          font-family: Open Sans;
+                  }
+      </style>
+      <!-- heading font -->
+
+      <!-- button font -->
+            <style type="text/css">
+        .button, a.button,	button,	input[type="submit"], input[type="reset"], input[type="button"]{
+          font-family: Open Sans;
+                  }
+      </style>
+      <!-- // button fonts -->
+
+      <!-- body font -->
+            <style typ="text/css">
+        body{
+          font-family: Open Sans;
+        }
+      </style>
+      <!-- // body font -->
+
+      <!-- body background and color -->
+            <style type="text/css">
+        body{
+          background-image: url(https://www.ug.edu.gh/hrodd/sites/all/themes/orid/styler/bgrs/bright_squares.png);        }
+      </style>
+      <!-- // body bg -->
+
+  </head>
+  <body class="html front not-logged-in one-sidebar sidebar-second page-node" >
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+         <div id="bg"></div>
+<div class="alert_block">
+     </div>
+<div id="wrapper" class="not-home-page">
+  <!--<div class="alert_block">
+     </div>-->
+  <div class="container">
+
+    <div class="header clearfix row">
+    <div class="top_header">
+    
+            <div class="header_contacts clearfix">
+                        </div>
+
+    </div>
+              <div class="eight columns header_left">
+          <a href="https://www.ug.edu.gh/hrodd/"><img src="https://www.ug.edu.gh/hrodd/sites/hrodd/files/ug-hrodd-office.png" alt="Home" /></a>
+        </div>
+      
+      <div class="eight columns">
+        <div class="header_right">
+          
+
+          <div class="header_soc_search clearfix">
+                          <div class="header_search">
+                <form class="search" action="https://www.ug.edu.gh/hrodd/" method="post" id="searchform" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-cyUibC4otSpSJbMhaGaCoYQ5jbH8iAeBn1iI8wbEp1Q" />
+<input type="hidden" name="form_id" value="search_block_form" />
+<button class="button_search"></button></div></form>              </div>
+                        
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <div class="row no_bm">
+      <div class="dark_menu sixteen columns">
+        <div id="menu" class="">
+          <ul id="responsive"  class="nav_simple sf-menu main-menu sf-horizontal sf-style-none sf-total-items-9 sf-parent-items-2 sf-single-items-7"><li><a href="https://www.ug.edu.gh/hrodd/"><span class="home_icon"></span></a></li><li id="menu-471-1" class="first odd sf-item-1 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/" title="" class="sf-depth-1  active">Home</a></li><li id="menu-569-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-2 sf-parent-children-0 sf-single-children-2 mainMenu parent menuparent has-dropdown"><a href="https://www.ug.edu.gh/hrodd/about/staff" class="sf-depth-1  mainMenu parent menuparent has-dropdown">About</a><ul class="dropdown"><li id="menu-585-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/about/staff" title="" class="sf-depth-2 ">Staff</a></li><li id="menu-581-1" class="last even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/about/organizational-chart" title="" class="sf-depth-2 ">Organizational Chart</a></li></ul></li><li id="menu-575-1" class="middle odd sf-item-3 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/documents" class="sf-depth-1 ">Documents</a></li><li id="menu-459-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-2 sf-parent-children-0 sf-single-children-2 mainMenu parent menuparent has-dropdown"><a href="https://www.ug.edu.gh/hrodd/forms/senior-members" class="sf-depth-1  mainMenu parent menuparent has-dropdown">Forms</a><ul class="dropdown"><li id="menu-1193-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/forms/senior-members" title="" class="sf-depth-2 ">Senior Members</a></li><li id="menu-1194-1" class="last even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/forms/senior-junior-staff" class="sf-depth-2 ">Senior &amp; Junior Staff</a></li></ul></li><li id="menu-968-1" class="middle odd sf-item-5 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/ug-policy" class="sf-depth-1 ">Policies</a></li><li id="menu-1002-1" class="middle even sf-item-6 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/orientation-handbook" title="" class="sf-depth-1 ">Orientation Handbook</a></li><li id="menu-1003-1" class="middle odd sf-item-7 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/concession-form" class="sf-depth-1 ">Concession</a></li><li id="menu-1004-1" class="middle even sf-item-8 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/seminars" title="" class="sf-depth-1 ">Seminars</a></li><li id="menu-1005-1" class="last odd sf-item-9 sf-depth-1 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/hrodd/housing-matters" title="" class="sf-depth-1 ">Housing Matters</a></li></ul>        </div>
+
+      </div>
+    </div>
+    <!-- Main Navigation::END -->
+        <!---->
+
+    <div class="sixteen columns">
+      <div class="breadcrumb">
+	<div class="breadcrumb-sub">
+          <a href="http://www.ug.edu.gh/" class="first_bc" target="_blank"><span>UG Home</span></a>
+          <a href="http://balme.ug.edu.gh/" class="last_bc" target="_blank"><span>Library</span></a>
+        </div>
+      </div>
+    </div>
+
+          <div class="h15 clear"></div>
+      <div class="row no_bm">
+        <div id="slider_holder" class="sixteen columns">
+            <div class="region region-slider">
+    <div id="block-layer-slider-1" class="block block-layer-slider">
+
+    
+  <div class="content">
+    <div id="layerslider_1" style="width: 900px; height: 300px; margin: 0px auto; box-shadow: 1px 1px 6px 0px #000;"><div class="ls-layer"  style="slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 20; delayout: 20;"><img src="https://www.ug.edu.gh/hrodd/sites/hrodd/files/ugslide.jpg" class="ls-bg"></div></div>  </div>
+</div>
+  </div>
+        </div>
+        <!-- Sequence Slider::END-->
+      </div>
+    
+
+    <div class="row content-holder">
+
+      
+              <div id="content" class="twelve columns margin-top">
+        
+
+            <div class="region region-content">
+     <div id="block-block-9" class="block block-block">
+
+      
+
+  <div class="content">
+    <div style="margin: 10px 10px 0px 15px">
+<p style="text-align: justify;"><span style="font-size:22px;"><em><strong>A</strong></em></span>kwaaba! Welcome to the Human Resources and Organisational Development Directorate webpage! The University of Ghana has a mission to develop world-class human resources and capabilities to meet national development needs and global challenges through quality teaching, learning, research and knowledge dissemination. The core business of the University of Ghana, i.e.,teaching, research and extension needs to be carried out by well-qualified and highly skilled people with support from other professionals and other staff who are equally well-qualified and highly skilled.</p>
+<p style="text-align: justify;">The primary objective of the HRODD web page is to provide the Human Resource information that employees of this University require to enable them access and take advantage of Human Resource systems and processes.</p>
+<p style="text-align: justify;">The second objective is to de-mystify Human Resource and Organisational Development systems and processes by making the necessary documents available at a click of a button. Finally, the webpage should bring HR and OD systems into the open and allow constructive criticism that should help move the Directorate forward.</p>
+<p style="text-align: justify;">Information currently available will be updated continuously. HRODD, therefore, welcomes suggestions, comments and indeed criticisms to enable us build upon this modest beginning.</p>
+<p style="text-align: justify;"><strong><em>Daniel O. Baidoo<br />
+		(Director).</em></strong></p>
+</div>
+<p> </p>
+  </div>
+</div>  </div>
+      
+      
+          
+                          
+          
+
+        </div> <!-- // content -->
+
+
+                  <!-- sidebar second -->
+          <div class="four columns sidebar margin-top">
+              <div class="region region-sidebar-second">
+     <div id="block-block-2" class="block block-block">
+
+        <h4 class="title"><span>Quick Links</span></h4>
+    
+
+  <div class="content">
+    <p> </p>
+<ul>
+<li>Related Offices</li>
+<li>Administrative Directorates</li>
+</ul>
+  </div>
+</div>  </div>
+          </div>
+          <!-- // sidebar second -->
+              </div>
+    </div>
+
+    
+    <!-- highlighted -->
+    <div class="twelve columns">
+        </div>
+
+
+    <!-- Footer -->
+    <div id="footer" class="container">
+              <div class="row footer_inside">
+
+          <div class="four columns f1" style="width:211px;">
+              <div class="region region-footer-firstcolumn">
+     <div id="block-block-3" class="block block-block">
+    
+    <h3>Contact Information</h3>
+
+    
+  <div class="content">
+    <div class="icon_phone"><a href=" "><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><span style="font-size: 11px;">+233-(0)302-500307</span></span></a></div>
+<div aria-hidden="true" class="fa fa-fax"><a href=" "><span style="font-size:11px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">   +233-(0)302-</span></span></a><a href=" "><span style="font-size:11px;"><span style="font-family: lucida sans unicode,lucida grande,sans-serif;">512409</span></span></a></div>
+<div class="icon_mail" style="text-align: justify;" title="Email"><a href="http://orid@ug.edu.gh/"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><span style="font-size: 11px;">hrodd@ug.edu.gh</span></span></a></div>
+<div class="icon_loc" style="text-align: justify;" title="Location"><a href="https://www.google.com.gh/maps/place/Legon+Centre+for+International+Affairs+and+Diplomacy,+University+of+Ghana,+Botanical+Gardens+Rd,+Accra/@5.6521685,-0.1841788,19z/data=!4m7!1m4!3m3!1s0x0fdf9c86dc2b3e93:0xf2c110cbc16a70a3!2sLegon+Centre+for+International+Affairs+and+Diplomacy,+University+of+Ghana,+Botanical+Gardens+Rd,+Accra!3b1!3m1!1s0x0fdf9c86dc2b3e93:0xf2c110cbc16a70a3?hl=en"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><span style="font-size: 11px;">P.O. Box LG 25<br />
+	Legon, Accra</span></span></a></div>
+  </div>
+</div>
+  </div>
+          </div>
+
+          <!--  1/4 Columns -->
+          <div class="three columns f2">
+              <div class="region region-footer-secondcolumn">
+     <div id="block-block-45" class="block block-block">
+    
+    <h3>Colleges</h3>
+
+    
+  <div class="content">
+    <div class="three columns f2">
+<div class="region region-footer-secondcolumn">
+<div class="block block-block" id="block-block-3">
+<div class="content">
+<ul class="margined_left">
+<li><a href="http://cbas.ug.edu.gh/" target="_blank">Basic &amp; Applied Science</a></li>
+<li><a href="http://coe.ug.edu.gh/" target="_blank">Education</a></li>
+<li><a href="http://chs.ug.edu.gh/" target="_blank">Health Science</a></li>
+<li><a href="http://coh.ug.edu.gh/" target="_blank">Humanities</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p> </p>
+  </div>
+</div>
+  </div>
+          </div>
+
+          <!-- 1/4 Columns -->
+          <div class="three columns f3">
+              <div class="region region-footer-thirdcolumn">
+     <div id="block-block-46" class="block block-block">
+    
+    <h3>admissions</h3>
+
+    
+  <div class="content">
+    <div class="block block-block" id="block-block-4">
+<div class="content">
+<ul class="margined_left">
+<li><a href="http://admission1.ug.edu.gh/freshstudents/index.php/overview.html" target="_blank">Undergraduate</a></li>
+<li><a href="http://admission1.ug.edu.gh/freshstudents/index.php/graduate-admissions/regular-full-fee-paying.html" target="_blank">Postgraduate</a></li>
+<li><a href="http://admission1.ug.edu.gh/freshstudents/index.php/international.html#" target="_blank">International</a></li>
+<li><a href="http://admission1.ug.edu.gh/freshstudents/index.php/undergraduate/distance-education-programme.html" target="_blank">Distance Education</a></li>
+</ul>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+            <div class="clearfix"></div>
+          </div>
+
+          <!-- 1/4 Columns -->
+          <div class="three columns f4">
+              <div class="region region-footer-fourthcolumn">
+     <div id="block-block-47" class="block block-block">
+    
+    <h3>Quick Links</h3>
+
+    
+  <div class="content">
+    <div class="block block-block" id="block-block-10">
+<div class="content">
+<ul class="margined_left">
+<li><a href="http://www.ug.edu.gh/sakai" target="_blank">Sakai LMS</a></li>
+<li><a href="#" target="_blank">Academic Calender</a></li>
+<li><a href="http://campuslife.ug.edu.gh/" target="_blank">Campus Life</a></li>
+<li><a href="http://www.ug.edu.gh/employment-opportunities">Employment Opportunities</a></li>
+</ul>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+          </div>
+
+            <!-- 1/4 Columns -->
+          <div class="three columns f5">
+                      </div>
+
+
+        
+      </div> 
+      <div class="clear"></div>
+
+      <div class="footer_btm">
+                    <div class="footer_btm_inner">
+                      <a href='#' target='_blank' class='icon_tweet' title='Twitter'>Twitter</a>      
+                                <a href='#' target='_blank' class='icon_google' title='Google+'>Google+</a>
+          
+                      <a href='#' target='_blank' class='icon_facebook' title='Facebook'>Facebook</a>
+                    <a href="http://www.youtube.com/user/universityghana" class='icon_skype' title='youtube' target="_blank">youtube</a> 
+
+                                <div id="powered"><a href="http://www.ug.edu.gh/" target="_blank">University of Ghana</a> © 2017</div>
+                  </div>    
+      </div>
+    </div>
+  
+    <!-- Footer::END -->
+
+  </div>
+      
+
+    
+      <!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="/hrodd/sites/all/themes/orid/stylesheets/sequencejs-theme.sliding-horizontal-parallax-ie.css" /><![endif]-->
+      <script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/misc/drupal.js?p87ld2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	jQuery(document).ready(function() { 
+		jQuery("#layerslider_1").layerSlider({ 
+			width : '900px',
+			height : '300px',
+			responsive : true,
+			responsiveUnder : 0,
+			sublayerContainer : 0,
+			autoStart : true,
+			pauseOnHover : true,
+			firstLayer : 1,
+			animateFirstLayer : true,
+			randomSlideshow : false,
+			twoWaySlideshow : true,
+			keybNav : true,
+			touchNav : true,
+			imgPreload : true,
+			navPrevNext : true,
+			navStartStop : true,
+			navButtons : true,
+			hoverPrevNext : true,
+			hoverBottomNav : false,
+			thumbnailNavigation : 'hover',
+			tnWidth : 30,
+			tnHeight : 30,
+			tnContainerWidth : '60%',
+			tnActiveOpacity : 80,
+			tnInactiveOpacity : 100,
+			skin : 'noskin',
+			skinsPath : '/hrodd/sites/hrodd/modules/layer_slider/skins/',
+			globalBGColor : '#444',
+			yourLogo : false,
+			yourLogoStyle : 'position: absolute; left: 10px; top: 10px; z-index: 99;',
+			yourLogoLink : false,
+			yourLogoTarget : '_self',
+			loops : 0,
+			forceLoopNum : true,
+			autoPlayVideos : true,
+			autoPauseSlideshow : 'auto',
+			youtubePreview : 'maxresdefault.jpg',
+			cbInit : function(element) { },
+			cbStart : function(data) { },
+			cbStop : function(data) { },
+			cbPause : function(data) { },
+			cbAnimStart : function(data) { },
+			cbAnimStop : function(data) { },
+			cbPrev : function(data) { },
+			cbNext : function(data) { }
+		});
+	});
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/hrodd/modules/layer_slider/js/layerslider.jquery.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/hrodd/modules/layer_slider/js/jquery-easing-1.3.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/jquery.easing.1.3.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/common.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/isotope.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/jquery.flexslider-min.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/jquery.prettyPhoto.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/jquery.jcarousel.min.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/jquery.tipsy.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/jquery.selectnav.js?p87ld2"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/hrodd/sites/all/themes/orid/js/aqua.js?p87ld2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/hrodd\/","pathPrefix":"","ajaxPageState":{"theme":"orid","theme_token":"hvMay3oANB1homEvrRhPcjFtYSCbXHt868AUrIPCcpM","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"0":1,"sites\/hrodd\/modules\/layer_slider\/js\/layerslider.jquery.js":1,"sites\/hrodd\/modules\/layer_slider\/js\/jquery-easing-1.3.js":1,"sites\/all\/themes\/orid\/js\/jquery.easing.1.3.js":1,"sites\/all\/themes\/orid\/js\/common.js":1,"sites\/all\/themes\/orid\/js\/isotope.js":1,"sites\/all\/themes\/orid\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/orid\/js\/jquery.prettyPhoto.js":1,"sites\/all\/themes\/orid\/js\/jquery.jcarousel.min.js":1,"sites\/all\/themes\/orid\/js\/jquery.tipsy.js":1,"sites\/all\/themes\/orid\/js\/jquery.selectnav.js":1,"sites\/all\/themes\/orid\/js\/aqua.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/hrodd\/modules\/layer_slider\/css\/layerslider.css":1,"sites\/all\/libraries\/fontawesome\/css\/font-awesome.css":1,"sites\/all\/themes\/orid\/stylesheets\/ug-style-min.css":1,"sites\/all\/themes\/orid\/stylesheets\/orid.css":1}},"urlIsAjaxTrusted":{"\/hrodd\/":true}});
+//--><!]]>
+</script>
+      <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <!--  Fonts  -->
+
+	
+
+  </body>
+
+<!-- Mirrored from www.ug.edu.gh/hrodd/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 09:25:16 GMT -->
+</html>

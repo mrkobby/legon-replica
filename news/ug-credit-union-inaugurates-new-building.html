@@ -1,0 +1,266 @@
+ <!DOCTYPE html>
+<!--
+              ,;r;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;r;,                 
+             .2@@@Superviser:Parick Kuti@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@h,
+             .@@Project+Managers:@@Michael##Phillips@Deborah###Allah@@@@@@@@@@@@@@@@@@@@@@*,
+             .X@@@Lead+Programmers:Gilbert_Gadzekpo@@@Ian Allotey@@@@@@@@@@@@@@@@@@@@@@@@@&,                
+              Developers@@BXi3@@@Alex#Tenkorang@@@@H2iG@@@@Emmanuel#Adu_Asare@@@A5Sh#@@@@@@@@@X.                
+              r#@@#####@@B2;;iA@@###############@@H5;;iH@@@##############@MXr;iA@@######@@2.                
+              r#@@#####@@M2r;i&#@@##############@@BXrri&#@@#############@@#Xr;i&#@@#####@@2.                
+              r#@@#####@@@ASrSH@@@##############@@@B5s2M@@@#############@@@ASr2B@@@@####@@2.                
+              r#@@###B3XH@@&29#BX3H#@#######@#H99B@@&5&#H9hB##########M9XH@M929#M9XH####@@2.                
+              r#@@##@#Girri5Siir;5M@@@######@@#&SrrS5iii;r2M@@@######@@hsrsS5Sisr;SB@@##@@2.                
+              r#@@###@@#2;;rsrrih@@@##########@@MS;rrsrri&@@@#########@@M2rrssrriG@@@#M#@@2.                
+              r#@@#HX5G#@BXisi2A@#h23H@@####A55G##H2iss2B@M923B@####HX5G#@B3iri2A@#hXhH#@@2.                
+              r#@@@#2;;s3A9SiS525r;s&#@@##@@#Xr;s3&XSii22S;;s&#@###@#X;:s3&9SiS225r;sA#@@@2.                
+              r#@@@@@B5;;;sSSir;;rX#@@@####@@@M5;;;sSSir;;r3#@@####@@@H5;;;sS5Ss;;rX#@@@@@2.                
+              r#@#AA#@@#G2iiiSSX&#@#HM####MAA#@@#G5iiiiSXA#@#BM####AA#@@Mh2iiiiSXGM@#HH#@@2.                
+              r@@@9sr2M@@#XsiSXB#H5rsh#@@@M3sr5M@@B2siS3M#H2rs&@@@#GsrX#@@MXisS3H#H2rs9#@@2.                
+              r#@@@Hi;;ri5SiSSisr;;SH@@@#@@#&s;;riSSiSSisr;;i&#@@@@@Ai;;ri55Siiisr;;SH@@@@2.                
+              r#@@@@M3sr;rsSSisrs2H@@@####@@@#hs;rriSSSsrs2A@@@###@@@M2rr;rsSSiiss2H@@@@@@2.                
+              r#@@@@@@@#&2iiiii9#@@@@#####@@@@@@#G5iiii5A@@@@@#####@@@@@#A2iiiiS9#@@@@##@@2.                
+              r#@@#@@@@@@#3ssi2H@@@@#######@@@@@@@#XissX#@@@@#######@@@@@@@hsri2H@@@@###@@X.                
+              s@@@@@@@@@@@ASss2B@@@@@@@@@@@@@@@@@@@ASsr2#@@@@@@@@@@@@@@@@@@HiriXB@@@@@@@@@3,                
+              :hB&h99GG&HA2srrs2GAG99hhhh9hhhGGGAA&2sr;s2G&hhhGGGGhh99hh&AA2srrs2h&Gh99hHAr                 
+              :3Hh333939G&AAAGhh9h93333hG&AAAAAAAAA&AA&h99hh&AAAAAAAG9339h&AAA&h9hh93339A&r                 
+              r#@@@@@@@@@@@@@@@@@@@@@@@@@MAGh9hA#@@@@@@@@@@@MAhh9GAM@@@@@@@@@@@@@@@@@@@@@@2.                
+              s@@@@@@@@@@@@@@@@@@@@@@@#A2issiirri3#@@@@@@@H2srsiissiXH@@@@@@@@@@@@@@@@@@@@3,                
+              r#@@#################@#9r;r2A#@@#&i;r2M@@@A5rrSA@@@#ASrrSA@@@#############@@X.                
+              r#@@##################&irX#@@@@@@@@Hs;sA#&sr2@@@@@@@@@Bi;SB@@#############@@2.                
+              r#@@###############@@HXsSB@@@B3SX#@@Birrssi3@@@H25&#@@@Gsi&#@@############@@2.                
+              r#@@###############@@HXs5B@@@#hs;sA@@B2r;sh@@@Xr;iA@@@@Aiih#@@############@@2.                
+              r#@@###############@@@HirSH@@@@hrrX@@@hs;iA@@#2riA@@@@Air5H@@#############@@2.                
+              r#@@################@@@H5r;rS25iS&@@#G25Si5G@@@Gisi5ir;s3M@@##############@@2.                
+              r#@@##########@@@@@@@@@@@MhX2XGM@@@M5r2#@As;X@@@@A3223A@@@@@@@@@@@@@######@@2.                
+              r#@@##########Bh223hAH#@@@@@@@@@#A2siXM@@@&iri3B#@@@@@@@@#BA&9X23A#@@#####@@2.                
+              r#@@########M9s:::::;;rrsS5222ir;::rA@@92A@@X;:;rsS222Sirrr;;::::;SA#@####@@2.                
+              r#@@#########A2srrssisiiS2222225isrs3MB9X&##3rriS22XX225Siiissrrrs2A######@@2.                
+              r#@@########@@@@BB#@@@@@@@@@#@@@@@B2rrh@@@9ss9#@@@@##@@@@@@@@@#BB@@@@#####@@2.                
+              r#@@########@@@@@@@@@@@@Mh5isi5h#@@@&siGHG55M@@@B35isi2A@@@@@@@@@@@#######@@2.                
+              r#@@#########@@@@@@@@@#Xr;s3BMhssX#@@A5rrih#@@Air5A#H2r;sG@@@@@@@@########@@2.                
+              r#@@##################hssh@@@@@hsr3@@#Xr;sA@@#5rSH@@@@#2riA#@@############@@2.                
+              r#@@###############@#A2s2#@@@#3sr2M@@GSsrs2H@@H5riG@@@@Ais9M@@############@@2.                
+              r#@@###############@@#GiiA@@@#HAM@@@Aii33SsSB@@@H&A#@@@GsiA#@@############@@2.                
+              r#@@################@@#5;rh#@@@@@@#Xrr3@@#S;rG@@@@@@@#hsrX#@@#############@@2.                
+              r#@@################@@@#Xr;r2hGhXSrrSH@@@@#9r;r53hhXSrri&#@@##############@@X,                
+              ;#@@#################@@@@M3SsrrrriXA@@@@@@@@#hSsrrrri2&#@@@###############@@2.                
+              :A@@##################@@@@@@#BAH#@@@@@####@@@@@@MHHM@@@@@@################@#s.                 
+              .2#@@###################@@@@@@@@@@@@#######@@@@@@@@@@@@@##################@@M;                 
+               :h@@@#####################@@@@@@####TEAM#####@@@@@@####################@@#9:                 
+                ;#@@@########Patrick#Kuti####Michael#Philips####Deborah#Allah#########@@3,                  
+                 :h@@@@@##########Gilbert#Gadzekpo#####Ian#Allotey#################@@@@B;                   
+                   rM@@@@@@@@@#######Alex#Tenkorang#####Emmanuel##Asare#####@@@@@@@@#5.                    
+                     ,s&@@@@@@@@@@@@@################################@@@@@@@@@@@@@Ai:                       
+         ...              ,;i3H@@@@@@@@@@@@@#################@@@@@@@@@@@@M&92s;:.          .:::.            
+      ,;r;:::::,.               .:;rs59A#@@@@@@@@@#######@@@@@@A3ir;;:..               .,::,,::;r;.         
+     :rrrssr;;iXi,                       .,;i2A#@@@@@@@@@#A2r:.                       ,s25r;;;;rs;,         
+     :r;::;:,.:;;.                             .;i&#@@H5;.                     ... .   ,::,,::;;sr:         
+     .r2S;,...    ..,,..                           ,;:                        ......,,.   ...,;SG2:         
+      ;2Ah2isr;rS2s:.,:;;rr;.                                               :rir;:. ,i92issi5X9h9s.         
+      ,SA&99h&&AHhr..;h@@@@@5,                                             ,2@@@@#S..rX&Ahhh93XXS;          
+       rX3X33393G3;.,r5399Gh2s;::,,.                                 ..,,,:r5XX23hs..;5993XXX22Sr,          
+         ,;sS5229X;..;s2&M@#M#@@###H&9X25isssrrrrrrrrrrrrrrsssssiiS2XGAHBMMAh&BMBGr. :s2X2Ssr:,             
+                 .  .rS3M@@@@##@@@@@@@@@@@@#HH#@@@@#UGCSMM#@@@@@@@##@@@@@@@#AB@@@Mi,                        
+                     :riXh&AAGhAM####@@@@@@#BM@@@@@@@@#@@@MM@@@@@@@@@@@@@@#MH&9X2s:.                        
+                            .,;rsii5Xh&&&AA&GGGh&ABBBBBBMBAAHBAAHH&9X5Sis;:,.                               
+                                        .,,:::,,,::::;;:::::::::,.                                          
+ -->
+
+
+<!--[if IE 7 ]><html class="ie ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+  
+<!-- Mirrored from www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 09:25:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building" />
+<link rel="shortlink" href="https://www.ug.edu.gh/node/56160" />
+<link rel="shortcut icon" href="https://www.ug.edu.gh/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UG Credit Union Inaugurates New Building | University of Ghana</title>
+    <link type="text/css" rel="stylesheet" href="https://www.ug.edu.gh/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.ug.edu.gh/sites/default/files/css/css_CVU9wKMnDIr7byiZlVzwymjkgBH3oZNo0gdmV8Pw1ww.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.ug.edu.gh/sites/default/files/css/css_u0Mlsecsua8UwiN8u5u9XoIu4BG-BlX4NhJpGk4_qKA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.ug.edu.gh/sites/default/files/css/css_hvNduKJucNZUbttoGz_pZtFlt340uUZmB_4zW5QJ3Ik.css" media="all" />
+	
+
+
+      
+
+      <!-- menu font -->
+            <style type="text/css">
+        .custom_menu #menu > ul > li > a,#menu {
+          font-family:Open Sans;
+                  }
+      </style>
+      <!-- // menu font -->
+
+      <!-- menu font size -->
+            <style type="text/css">
+        #menu > ul > li > a{
+          font-size: 15px ;
+        }
+        #menu > ul > li ul > li > a{
+          font-size: 14px ;
+        }
+      </style>
+      <!-- // menu font size -->
+
+
+      <!-- main color -->
+            <style type="text/css">
+        a:hover, a:focus{
+          color: #0AD1E5 ;
+        }
+        .button:hover,
+        a:hover.button,
+        button:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,	
+        input[type="button"]:hover,
+        .button_hilite, 
+        a.button_hilite,
+        .button_hilite,
+        a.button_hilite{
+          color: #FFF;
+          background-color: #0AD1E5;
+        }
+        .section_big_title h1 strong,
+        .section_featured_texts h3 a:hover,
+        .breadcrumb a:hover,
+        .post_meta a:hover,
+        #footer a:hover {
+          color: #0AD1E5 ;
+        }
+        .portfolio_filter div.current,
+        .next:hover,.prev:hover,
+        .pagination .links a:hover,
+        .info h2, 
+        .h2.ls-s2,
+        jcarousel-next-horizontal:hover, 
+        .jcarousel-prev-horizontal:hover{
+          background-color: #0AD1E5 ;
+        }
+        .footer_pic img:hover{
+          border: 1px solid #0AD1E5;
+        }
+      </style>
+      <!-- // main color -->
+
+      <!-- heading font -->
+            <style type="text/css">
+        h1, h2, h3, h4, h5, .title, .section_big_title h1, .heading, #footer h3,
+        .page_heading h1{
+          font-family: Open Sans;
+                  }
+      </style>
+      <!-- heading font -->
+
+      <!-- button font -->
+            <style type="text/css">
+        .button, a.button,	button,	input[type="submit"], input[type="reset"], input[type="button"]{
+          font-family: Open Sans;
+                  }
+      </style>
+      <!-- // button fonts -->
+
+      <!-- body font -->
+            <style typ="text/css">
+        body{
+          font-family: Open Sans;
+        }
+      </style>
+      <!-- // body font -->
+
+      <!-- body background and color -->
+            <style type="text/css">
+        body{
+          background-image: url(https://www.ug.edu.gh/sites/all/themes/ugmain/styler/bgrs/main_bgr.png);        }
+      </style>
+      <!-- // body bg -->
+
+  </head>
+  <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-56160 node-type-article" >
+	<div class="ug_background">
+		<img src="https://www.ug.edu.gh/sites/all/themes/ugmain/images/great-hall-artwork.png" class="bg-img1">
+		<img src="https://www.ug.edu.gh/sites/all/themes/ugmain/images/balme-artwork.png" class="bg-img2">
+	</div>
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div id="wrapper" class="not-home-page"><div class="container"><div class="header clearfix row"><div class="top_header"><div class="header_contacts clearfix"><div class="region region-top-menu"><div id="block-nice-menus-1" class="block block-nice-menus"><div class="content"><ul class="nice-menu nice-menu-down nice-menu-menu-top-menu" id="nice-menu-1"><li class="menu-492 menuparent menu-path-node-7309 first odd "><a href="https://www.ug.edu.gh/ug-staff">Staff</a><ul><li class="menu-4776 menu-path---portalofficecom first odd "><a href="http://portal.office.com/">Staff Email (Office 365)</a></li><li class="menu-644 menu-path-employment-opportunities even "><a href="https://www.ug.edu.gh/employment-opportunities">Employment</a></li><li class="menu-2862 menu-path-sugportalugedugh- odd "><a href="https://ugportal.ug.edu.gh/">Intranet Portal</a></li><li class="menu-1582 menu-path-sitsapp08ugedugh-pls-prodi03-w99pkgmi-login even "><a href="https://itsapp08.ug.edu.gh/pls/prodi03/w99pkg.mi_login" target="_blank">MIS Web</a></li><li class="menu-1800 menu-path-ugedugh-pad-publication-policies odd "><a href="http://www.ug.edu.gh/pad/publication/policies" target="_blank">Policies</a></li><li class="menu-640 menu-path-staff-directory even last"><a href="https://www.ug.edu.gh/staff-directory">Staff directory</a></li></ul></li><li class="menu-491 menuparent menu-path---ugedugh-students even "><a href="http://www.ug.edu.gh/students">Student</a><ul><li class="menu-5700 menu-path-sugedugh-students first odd "><a href="https://www.ug.edu.gh/students">Student Portal</a></li><li class="menu-642 menu-path-sitsapp08ugedugh-pls-prodi03-w99pkgmi-login even "><a href="https://itsapp08.ug.edu.gh/pls/prodi03/w99pkg.mi_login" target="_blank">MIS Web</a></li><li class="menu-494 menu-path-mailgooglecom-a-stugedugh odd "><a href="http://mail.google.com/a/st.ug.edu.gh" target="_blank">Email</a></li><li class="menu-643 menu-path---ugedugh-students-src-home even "><a href="http://www.ug.edu.gh/students/src/home" target="_blank">SRC</a></li><li class="menu-2327 menu-path-ssitesgooglecom-a-ugedugh-ug-campus-wireless-network-2- odd last"><a href="https://sites.google.com/a/ug.edu.gh/ug-campus-wireless-network-2/" target="_blank">Wireless Access</a></li></ul></li><li class="menu-493 menu-path-sarugedugh odd last"><a href="https://ar.ug.edu.gh/" target="_blank">Alumni</a></li></ul></div></div></div></div></div><div class="eight columns header_left"> <a href="https://www.ug.edu.gh/"><img src="https://www.ug.edu.gh/sites/default/files/ug_standard_new_sl_1.png" alt="Home" /></a></div><div class="eight columns"><div class="header_right"><div class="header_soc_search clearfix"><div class="header_search"><form class="search" action="https://www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building" method="post" id="searchform" accept-charset="UTF-8"><div><div class="container-inline"><h2 class="element-invisible">Search form</h2> <button class="button_search"></button><div class="form-item form-type-textfield form-item-search-block-form"> <label class="element-invisible" for="s">Search </label> <input title="Enter the terms you wish to search for." class="search-text-box form-text" type="text" id="s" name="search_block_form" value="" size="15" maxlength="128" /></div><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-dCmAL8YbzGuO9HQyVCZAjPBe7P93CBTWjDqSZ1kuU7I" /><input type="hidden" name="form_id" value="search_block_form" /></div></div></form></div></div><div><div class="region region-search"><div id="block-text-resize-0" class="block block-text-resize"><div class="content"> <a href="javascript:;" class="changer" id="text_resize_decrease"><sup>-</sup>A</a> <a href="javascript:;" class="changer" id="text_resize_reset">A</a> <a href="javascript:;" class="changer" id="text_resize_increase"><sup>+</sup>A</a><div id="text_resize_clear"></div></div></div></div></div></div></div></div><div class="row no_bm"><div class="dark_menu sixteen columns"><div id="menu" class=""><ul id="responsive" class="nav_simple sf-menu main-menu sf-horizontal sf-style-none sf-total-items-7 sf-parent-items-5 sf-single-items-2"><li><a href="https://www.ug.edu.gh/"><span class="home_icon"></span></a></li><li id="menu-680-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 mainMenu parent menuparent has-dropdown"><a href="https://www.ug.edu.gh/about/overview" class="sf-depth-1 mainMenu parent menuparent has-dropdown">About</a><ul class="dropdown"><li id="menu-686-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/about/overview" class="sf-depth-2 ">Overview</a></li><li id="menu-684-1" class="middle even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/content/office-chancellor" class="sf-depth-2 ">Office of the Chancellor</a></li><li id="menu-687-1" class="middle odd sf-item-3 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/vc/home" class="sf-depth-2 ">Office of the Vice Chancellor</a></li><li id="menu-468-1" class="middle even sf-item-4 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/about/enrolment-and-graduation-statistics" class="sf-depth-2 ">Enrolment Facts</a></li><li id="menu-469-1" class="middle odd sf-item-5 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/content/establishment-university" class="sf-depth-2 ">History</a></li><li id="menu-688-1" class="middle even sf-item-6 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/university-leadership/officers" class="sf-depth-2 ">University Leadership</a></li><li id="menu-1649-1" class="middle odd sf-item-7 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/registry/office-registrar" class="sf-depth-2 ">Registry</a></li><li id="menu-877-1" class="middle even sf-item-8 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/about/institutional-affiliations" title="institutional-affiliations" class="sf-depth-2 ">UG Affiliates &amp; Partners</a></li><li id="menu-1742-1" class="middle odd sf-item-9 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/about/statutes-of-the-university" class="sf-depth-2 ">Statutes of the University</a></li><li id="menu-3479-1" class="middle even sf-item-10 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/pad/publication/policies" class="sf-depth-2 ">UG Policies</a></li><li id="menu-876-1" class="middle odd sf-item-11 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/pad/ug-publications" target="_blank" class="sf-depth-2 ">UG Publications</a></li><li id="menu-2733-1" class="last even sf-item-12 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/pad" target="_blank" class="sf-depth-2 ">Public Affairs Directorate</a></li></ul></li><li id="menu-681-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 mainMenu parent menuparent has-dropdown"><a href="https://admission.ug.edu.gh/applying/" class="sf-depth-1 mainMenu parent menuparent has-dropdown">Admission</a><ul class="dropdown"><li id="menu-1054-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="https://admission.ug.edu.gh/applying/undergraduate/overview" class="sf-depth-2 ">Undergraduate</a></li><li id="menu-2139-1" class="middle even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="http://admission.ug.edu.gh/freshstudents/index.php/graduate-admissions/regular-full-fee-paying" class="sf-depth-2 ">School of Graduate Studies</a></li><li id="menu-473-1" class="last odd sf-item-3 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/aid/welcome" class="sf-depth-2 ">Financial Aid</a></li></ul></li><li id="menu-683-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-10 sf-parent-children-0 sf-single-children-10 mainMenu parent menuparent has-dropdown"><a href="https://www.ug.edu.gh/academics/colleges" class="sf-depth-1 mainMenu parent menuparent has-dropdown">Academics</a><ul class="dropdown"><li id="menu-418-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/content/welcome" class="sf-depth-2 ">Office of Pro-Vice Chancellor</a></li><li id="menu-4921-1" class="middle even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/dos" class="sf-depth-2 ">Dean of Student Affairs</a></li><li id="menu-419-1" class="middle odd sf-item-3 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/academics/colleges" class="sf-depth-2 ">Colleges</a></li><li id="menu-2059-1" class="middle even sf-item-4 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/academics/institutes-centres" class="sf-depth-2 ">Institutes &amp; Centres</a></li><li id="menu-420-1" class="middle odd sf-item-5 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/departments" class="sf-depth-2 ">Departments A - Z</a></li><li id="menu-2138-1" class="middle even sf-item-6 sf-depth-2 mainMenu sf-no-children"><a href="http://sgs.ug.edu.gh/" class="sf-depth-2 ">School of Graduate Studies</a></li><li id="menu-475-1" class="middle odd sf-item-7 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/aad" class="sf-depth-2 ">Academic Affairs</a></li><li id="menu-476-1" class="middle even sf-item-8 sf-depth-2 mainMenu sf-no-children"><a href="https://www.ug.edu.gh/academics/calendar" class="sf-depth-2 ">Academic Calendar</a></li><li id="menu-2974-1" class="middle odd sf-item-9 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/aqau/home" class="sf-depth-2 ">Academic Quality Asurance</a></li><li id="menu-875-1" class="last even sf-item-10 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/aad/Students-Handbook" class="sf-depth-2 ">Student Handbook</a></li></ul></li><li id="menu-407-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-8 sf-parent-children-1 sf-single-children-7 mainMenu parent menuparent has-dropdown"><a href="http://orid.ug.edu.gh/" target="_blank" class="sf-depth-1 mainMenu parent menuparent has-dropdown">Research</a><ul class="dropdown"><li id="menu-465-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/about/welcome" target="_blank" class="sf-depth-2 ">Overview</a></li><li id="menu-477-1" class="middle even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/about/pro-vc-orid" target="_blank" class="sf-depth-2 ">Office of Pro-Vice Chancellor</a></li><li id="menu-478-1" class="middle odd sf-item-3 sf-depth-2 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/ug-research-grant" target="_blank" class="sf-depth-2 ">UG Research Grants</a></li><li id="menu-1652-1" class="middle even sf-item-4 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 mainMenu parent menuparent has-dropdown"><a href="http://orid.ug.edu.gh/ethics-research-dissemination-0" class="sf-depth-2 mainMenu parent menuparent has-dropdown">Ethics &amp; Research Dissemination</a><ul class="dropdown"><li id="menu-482-1" class="first odd sf-item-1 sf-depth-3 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/ethics-commitees" target="_blank" class="sf-depth-3 ">Ethics Committees</a></li></ul></li><li id="menu-479-1" class="middle odd sf-item-5 sf-depth-2 mainMenu sf-no-children"><a href="http://tdtc.ug.edu.gh/resources-for-researchers/intellectual-property/" target="_blank" class="sf-depth-2 ">Intellectual Property</a></li><li id="menu-480-1" class="middle even sf-item-6 sf-depth-2 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/inaugural-lectures" target="_blank" class="sf-depth-2 ">Public Lectures</a></li><li id="menu-481-1" class="middle odd sf-item-7 sf-depth-2 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/research-opportunity-alerts-6" target="_blank" class="sf-depth-2 ">Research Opportunities Alerts</a></li><li id="menu-2384-1" class="last even sf-item-8 sf-depth-2 mainMenu sf-no-children"><a href="http://orid.ug.edu.gh/annual-research-report" target="_blank" class="sf-depth-2 ">Annual Research Reports</a></li></ul></li><li id="menu-421-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 mainMenu parent menuparent has-dropdown"><a href="http://balme.ug.edu.gh/" target="_blank" class="sf-depth-1 mainMenu parent menuparent has-dropdown">Library</a><ul class="dropdown"><li id="menu-486-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="http://balme.ug.edu.gh/" target="_blank" class="sf-depth-2 ">Balme Library</a></li><li id="menu-1046-1" class="middle even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="http://ugspace.ug.edu.gh/" target="_blank" class="sf-depth-2 ">Institutional Repository</a></li><li id="menu-483-1" class="middle odd sf-item-3 sf-depth-2 mainMenu sf-no-children"><a href="http://library.ug.edu.gh/" target="_blank" class="sf-depth-2 ">Online Catalogue</a></li><li id="menu-484-1" class="middle even sf-item-4 sf-depth-2 mainMenu sf-no-children"><a href="http://libguides.ug.edu.gh/" target="_blank" class="sf-depth-2 ">Research Guides</a></li><li id="menu-485-1" class="middle odd sf-item-5 sf-depth-2 mainMenu sf-no-children"><a href="http://ezproxy.ug.edu.gh/" target="_blank" class="sf-depth-2 ">Off-Campus Access</a></li><li id="menu-4117-1" class="last even sf-item-6 sf-depth-2 mainMenu sf-no-children"><a href="http://libcal.ug.edu.gh/" class="sf-depth-2 ">Events &amp; Room Reservation</a></li></ul></li><li id="menu-464-1" class="middle even sf-item-6 sf-depth-1 mainMenu sf-no-children"><a href="http://ipo.ug.edu.gh/" class="sf-depth-1 ">International Programmes</a></li><li id="menu-3487-1" class="last odd sf-item-7 sf-depth-1 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers" class="sf-depth-1 ">Freshmen Info</a></li></ul></div></div></div><div class="row"><div class="sixteen columns"><div class="breadcrumb"> <a href="https://www.ug.edu.gh/">Home</a>UG Credit Union Inaugurates New Building</div></div></div><div class="row"><div id="page-content" class="eleven columns "><div class="page_heading"><h1>UG Credit Union Inaugurates New Building</h1></div><div class="region region-content"><div id="block-system-main" class="block block-system"><div class="content"><div id="node-56160" class="node node-article node-article clearfix" about="/news/ug-credit-union-inaugurates-new-building" typeof="sioc:Item foaf:Document"><div class="submitted"> <span property="dc:date dc:created" content="2018-10-30T17:20:19+00:00" datatype="xsd:dateTime" rel="sioc:has_creator"><p class="post_meta"><span class="calendar">30 Oct, 2018</span><span class="author">by <span class="username" xml:lang="" about="/users/skdagudetse" typeof="sioc:UserAccount" property="foaf:name" datatype="">skdagudetse</span></span></p></span></div><div class="node-image"><div class="pic"> <a href="https://www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building"> <img typeof="foaf:Image" src="https://www.ug.edu.gh/sites/default/files/styles/blog_teaser/public/field/image/Credit Union Building.JPG?itok=Wjhr1daf" width="613" height="350" alt="" /> </a></div></div> <span property="dc:title" content="UG Credit Union Inaugurates New Building" class="rdf-meta element-hidden"></span><div class="content"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p style="text-align: center;"><em><strong>The Newly Inaugurated Building </strong></em></p><p><a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/univofghana?ref_src=twsrc%5Etfw">Follow @univofghana</a></p>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p style="text-align: justify;"><span style="font-size: 13.008px;">Vice Chancellor of the University of Ghana, Professor Ebenezer Oduro Owusu has called on the University of Ghana Co-operative Credit Union Limited to support the University establish new halls of residence to meet the teeming numbers expected to be admitted in the coming years.</span></p><p style="text-align: justify;">The Vice Chancellor made this call at the inauguration of the University of Ghana Co-operative Credit Union Limited’s new building. The edifice, which was constructed by Pel Construction Ltd. began in 2017.  </p><p style="text-align: justify;">Prof. Oduro Owusu, alluded to a discussion held with the Minister in Charge of Tertiary Education where same issue came up for discussion.  “The land is available. In three years, our admissions numbers are going to double. This year we admitted eleven thousand, we are expecting that next year and next two years we are expected to admit not less than twenty thousand students” he said.</p><p style="text-align: center;"><img alt="" src="https://www.ug.edu.gh/sites/default/files/images/Credit Union VC.JPG" style="width: 638px; height: 443px;" /></p><p style="text-align: center;"><em><strong><span style="font-size: 13.008px;">Prof. Ebenezer Oduro Owusu</span></strong></em></p><p style="text-align: justify;">Professor Oduro Owusu noted only 2,800 students were accommodated this year out of 7400. He therefore urged the Union to collaborate with the University in her bid to find a lasting solution to the accommodation problem on campus. He later congratulated the union and urged them to maintain the building.</p><p style="text-align: justify;">Minister of State in Charge of Tertiary Education, Prof. Kwesi Yankah who was the guest of honour also congratulated the Union for its ability to stand the test of time. He noted that, the union belongs to the staff of the university and therefore should be able to support the welfare of the staff.</p><p style="text-align: center;"><em><strong><img alt="" src="https://www.ug.edu.gh/sites/default/files/images/Credit Union Building Prof. Yankah.JPG" style="width: 371px; height: 448px;" /></strong></em></p><p style="text-align: center;"><em><strong><span style="font-size: 13.008px;">Prof. Kwesi Yankah</span></strong></em></p><p style="text-align: justify;">The Vice Chancellor together with Prof. Kwesi Yankah inaugurated the new building.</p><p style="text-align: justify;"> </p><p style="text-align: center;"><img alt="" src="https://www.ug.edu.gh/sites/default/files/images/Credit Union Tape Cutting.JPG" style="width: 637px; height: 487px;" /></p><p style="text-align: center;"><em style="font-size: 13.008px; text-align: center;"><strong><span style="font-size: 13.008px;">Prof. Ebenezer Oduro Owusu and </span></strong></em><em style="font-size: 13.008px; text-align: center;"><strong><span style="font-size: 13.008px;">Prof. Kwesi Yankah cuttting the tape to Inaugurate the building</span></strong></em></p><p style="text-align: center;"><img alt="" src="https://www.ug.edu.gh/sites/default/files/images/Credit Union Building tour.JPG" style="width: 600px; height: 398px;" /></p><p style="font-size: 13.008px; text-align: center;"><em><strong><span style="font-family: ProximaNova-Regular, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;">Manager of UG Credit Union Mr. Francis Fiayiya giving invited guests a tour of the new building</span></strong></em></p><p style="font-size: 13.008px; text-align: center;"><img alt="" src="https://www.ug.edu.gh/sites/default/files/images/Credit Union Building Teller.JPG" style="width: 643px; height: 424px;" /></p><p style="font-size: 13.008px; text-align: center;"><em style="font-size: 13.008px;"><strong><span style="font-family: ProximaNova-Regular, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;">Banking hall of the new Credit Union Building </span></strong></em></p><div> </div><p style="text-align: justify;"> </p><p style="text-align: justify;"> </p><p style="text-align: justify;"> </p><p style="text-align: justify;"> </p><p> </p></div></div></div><div class="service-links"><ul class="links"><li class="service-links-print first"><a href="https://www.ug.edu.gh/print/news/ug-credit-union-inaugurates-new-building" title="Printable version" class="service-links-print" rel="nofollow"><img typeof="foaf:Image" src="https://www.ug.edu.gh/sites/all/modules/service_links/images/print.png" alt="Print HTML logo" /></a></li><li class="service-links-google-plus-one"><a href="https://www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building" title="Plus it" class="service-links-google-plus-one" rel="nofollow"><span class="element-invisible">Google Plus One</span></a></li><li class="service-links-facebook-share"><a href="http://www.facebook.com/sharer.php" title="Share this post on Facebook" class="service-links-facebook-share" rel="https://www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building"><span class="element-invisible">Share on Facebook</span></a></li><li class="service-links-twitter-widget last"><a href="http://twitter.com/share?url=https%3A//www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building&amp;count=horizontal&amp;via=&amp;text=UG%20Credit%20Union%20Inaugurates%20New%20Building&amp;counturl=https%3A//www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building" class="twitter-share-button service-links-twitter-widget" title="Tweet This" rel="nofollow"><span class="element-invisible">Tweet Widget</span></a></li></ul></div></div></div></div></div></div></div><div class="four columns sidebar "><div class="region region-sidebar-second"><div id="block-block-14" class="block block-block"><h4 class="title"><span>News &amp; Events</span></h4><div class="content"><ul class="arrowed"><li><a href="https://www.ug.edu.gh/news">UGNews</a></li><li><a href="https://www.ug.edu.gh/events">UGEvents</a></li><li><a href="https://www.ug.edu.gh/announcements">Announcements</a></li><li><a href="https://www.ug.edu.gh/announcements">Calender</a></li></ul></div></div><div id="block-views-news-block" class="block block-views"><h4 class="title"><span>Latest News</span></h4><div class="content"><div class="view view-news view-id-news view-display-id-block view-dom-id-7f9937368d551a5babc0acabb298f5fd"><div class="view-content"><div class="views-row views-row-1 views-row-odd views-row-first"><div class="views-field views-field-title"> <span class="field-content"><a href="https://www.ug.edu.gh/news/centre-latin-american-studies-andrew-mellon-research-team-holds-workshop-tabom">Centre for Latin American Studies Andrew Mellon Research Team Holds Workshop on the Tabom</a></span></div></div><div class="views-row views-row-2 views-row-even"><div class="views-field views-field-title"> <span class="field-content"><a href="https://www.ug.edu.gh/news/ug-credit-union-holds-annual-general-meeting">UG Credit Union Holds Annual General Meeting</a></span></div></div><div class="views-row views-row-3 views-row-odd"><div class="views-field views-field-title"> <span class="field-content"><a href="https://www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building" class="active">UG Credit Union Inaugurates New Building</a></span></div></div><div class="views-row views-row-4 views-row-even"><div class="views-field views-field-title"> <span class="field-content"><a href="https://www.ug.edu.gh/news/university-ghana-signs-mou-university-sheffield">University of Ghana Signs MOU With University of Sheffield</a></span></div></div><div class="views-row views-row-5 views-row-odd views-row-last"><div class="views-field views-field-title"> <span class="field-content"><a href="https://www.ug.edu.gh/news/ipo-welcome-durbar-2018">IPO Welcome Durbar 2018 </a></span></div></div></div></div></div></div></div></div></div></div><div id="footer" class="container"><div class="row footer_inside"><div class="four columns f1" style="width:211px;"><div class="region region-footer-firstcolumn"><div id="block-block-5" class="block block-block"><h3>Get in Touch with Us</h3><div class="content"><div class="icon_phone" title="Phone">+233-(0)302-213820</div><div class="icon_phone" title="Phone">+233-(0)302-213850</div><div class="icon_mail" title="Email"><a href="mailto:pad@ug.edu.gh">pad@ug.edu.gh</a></div><div class="icon_loc" title="Location">P.O. Box LG 25<br />Legon, Accra</div><div class="clear"> </div><div class="h10"> </div></div></div></div></div><div class="three columns f2"><div class="region region-footer-secondcolumn"><div id="block-block-3" class="block block-block"><h3>Colleges</h3><div class="content"><ul class="margined_left"><li><a href="http://cbas.ug.edu.gh/" target="_blank">Basic &amp; Applied Sciences</a></li><li><a href="http://coe.ug.edu.gh/" target="_blank">Education</a></li><li><a href="http://chs.ug.edu.gh/" target="_blank">Health Science</a></li><li><a href="http://coh.ug.edu.gh/" target="_blank">Humanities</a></li><li><a href="http://sgs.ug.edu.gh/" target="_blank">School of Graduate Studies</a></li></ul></div></div></div></div><div class="three columns f3"><div class="region region-footer-thirdcolumn"><div id="block-block-4" class="block block-block"><h3>Admissions</h3><div class="content"><ul class="margined_left"><li><a href="http://admission.ug.edu.gh/applying/undergraduate/overview" target="_blank">Undergraduate</a></li><li><a href="http://admission.ug.edu.gh/applying/postgraduate/overview" target="_blank">Postgraduate</a></li><li><a href="http://admission.ug.edu.gh/applying/international/overview" target="_blank">International</a></li><li><a href="http://admission.ug.edu.gh/applying/distance/undergraduate-overview" target="_blank">Distance Education</a></li></ul></div></div></div><div class="clearfix"></div></div><div class="three columns f4"><div class="region region-footer-fourthcolumn"><div id="block-block-10" class="block block-block"><h3>Quick Links</h3><div class="content"><ul class="margined_left"><li><a href="http://sakai.ug.edu.gh/" target="_blank">Sakai LMS</a></li><li><a href="https://ugportal.ug.edu.gh/">UG Intranet Portal</a></li><li><a href="http://pada.ug.edu.gh/" target="_blank">The Pan-African Doctoral Academy (PADA)</a></li><li><a href="http://www.ug.edu.gh/academics/calendar" target="_blank">Academic Calender</a></li><li><a href="http://www.ug.edu.gh/employment-opportunities">Employment Opportunities</a></li></ul></div></div></div></div><div class="three columns f5"><div class="region region-footer-fifthcolumn"><div id="block-block-9" class="block block-block"><h3>Alumni</h3><div class="content"><ul class="margined_left"><li><a href="https://ar.ug.edu.gh/" target="_blank">Alumni Relations Office</a></li><li><a href="https://ar.ug.edu.gh/give-ug" target="_blank">Give to UG</a></li></ul></div></div></div></div></div><div class="clear"></div><div class="footer_btm"><div class="footer_btm_inner"> <a href='https://twitter.com/univofghana' target='_blank' class='icon_tweet' title='Twitter'>Twitter</a> <a href='https://plus.google.com/u/0/+universityofghana/posts' target='_blank' class='icon_google' title='Google+'>Google+</a> <a href='#' target='_blank' class='icon_facebook' title='Facebook'>Facebook</a> <a href="http://www.youtube.com/user/universityghana" class='icon_skype' title='youtube' target="_blank">youtube</a><div id="powered">copyright © 2018, <a href="http://www.ug.edu.gh/">University of Ghana</a></div></div></div></div></div>    
+
+    
+      <!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/ugmain/stylesheets/sequencejs-theme.sliding-horizontal-parallax-ie.css" /><![endif]-->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='https://www.ug.edu.gh/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.ug.edu.gh/sites/default/files/js/js_NW-oHAf_N0Ose_zEOtCF-2evKz-40UYc5of4exp9KYM.js"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/sites/default/files/js/js_xqLA_4k_SXMKuic9fg5ToEzFZ0vZJ-G4G37LPmYrVqU.js"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/sites/default/files/js/js_Cl0RumpiVc-4xPZgT5waU8dKTf-obio3uYy0FdssRD8.js"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/sites/default/files/js/js_tfR4T0eXG0xhpfmvCL9FJWj4RHLf9B1YuzhdFgbZRKs.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var text_resize_scope = "page-content";
+          var text_resize_minimum = "12";
+          var text_resize_maximum = "20";
+          var text_resize_line_height_allow = 0;
+          var text_resize_line_height_min = "16";
+          var text_resize_line_height_max = "36";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.ug.edu.gh/sites/default/files/js/js_nGAK_OG81XOTobn0Okqi_ebrH4DlaE10eJUV3BBYCC0.js"></script>
+<script type="text/javascript" src="https://www.ug.edu.gh/sites/default/files/js/js_PZVclffdZwD91p3L-dMGEGPeIE-JpqjzvtISnu0f_Bc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ugmain","theme_token":"jTmqA3KZgIdda5JBh2ee7bs9cE9x-ES7OI69Davx0Gc","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"sites\/default\/files\/minify\/jquery.once.1.2.min.js":1,"misc\/jquery.once.js":1,"sites\/default\/files\/minify\/drupal.min.js":1,"sites\/default\/files\/minify\/jquery.bgiframe.2.1.min.js":1,"sites\/default\/files\/minify\/jquery.hoverIntent.0.5.min.js":1,"sites\/default\/files\/minify\/superfish.v1.4.8.min.js":1,"sites\/default\/files\/minify\/nice_menus.1.0.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/user_alert\/js\/user-alert.js":1,"sites\/default\/files\/minify\/facebook_share.min.js":1,"sites\/default\/files\/minify\/twitter_button.min.js":1,"sites\/default\/files\/minify\/google_plus_one.min.js":1,"0":1,"sites\/default\/files\/minify\/text_resize.min.js":1,"sites\/default\/files\/minify\/jquery.easing.1.3.min.js":1,"sites\/default\/files\/minify\/common.min.js":1,"sites\/default\/files\/minify\/isotope.min.js":1,"sites\/default\/files\/minify\/jquery.flexslider-min.min.js":1,"sites\/all\/themes\/ugmain\/js\/jquery.prettyPhoto.js":1,"sites\/default\/files\/minify\/jquery.jcarousel.min.min.js":1,"sites\/default\/files\/minify\/jquery.tipsy.min.js":1,"sites\/default\/files\/minify\/jquery.selectnav.min.js":1,"sites\/default\/files\/minify\/aqua.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/user_alert\/css\/user-alert.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/announcements\/announcements.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/modules\/text_resize\/text_resize.css":1,"sites\/all\/themes\/ugmain\/stylesheets\/ug-style-min.css":1,"sites\/all\/themes\/ugmain\/stylesheets\/links.css":1}},"user_alert":{"url_prefix":""},"ws_fs":{"type":"button_count","app_id":"150123828484431","css":""},"ws_gpo":{"size":"medium","annotation":"","lang":"","callback":"","width":300},"nice_menus_options":{"delay":800,"speed":"slow"},"urlIsAjaxTrusted":{"\/news\/ug-credit-union-inaugurates-new-building":true}});
+//--><!]]>
+</script>
+      <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <!--  Fonts  -->
+
+	
+
+  </body>
+
+<!-- Mirrored from www.ug.edu.gh/news/ug-credit-union-inaugurates-new-building by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 09:25:14 GMT -->
+</html>

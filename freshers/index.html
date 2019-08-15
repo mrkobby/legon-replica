@@ -1,0 +1,518 @@
+ <!DOCTYPE html>
+<!--
+              ,;r;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;r;,                 
+             .2@@@Superviser:Parick Kuti@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@h,
+             .@@Project+Managers:@@Michael##Phillips@Deborah###Allah@@@@@@@@@@@@@@@@@@@@@@*,
+             .X@@@Lead+Programmers:Gilbert_Gadzekpo@@@Ian Allotey@@@@@@@@@@@@@@@@@@@@@@@@@&,                
+              Developers@@BXi3@@@Alex#Tenkorang@@@@H2iG@@@@Emmanuel#Asare@@@A5Sh#@@@@@@@@@X.                
+              r#@@#####@@B2;;iA@@###############@@H5;;iH@@@##############@MXr;iA@@######@@2.                
+              r#@@#####@@M2r;i&#@@##############@@BXrri&#@@#############@@#Xr;i&#@@#####@@2.                
+              r#@@#####@@@ASrSH@@@##############@@@B5s2M@@@#############@@@ASr2B@@@@####@@2.                
+              r#@@###B3XH@@&29#BX3H#@#######@#H99B@@&5&#H9hB##########M9XH@M929#M9XH####@@2.                
+              r#@@##@#Girri5Siir;5M@@@######@@#&SrrS5iii;r2M@@@######@@hsrsS5Sisr;SB@@##@@2.                
+              r#@@###@@#2;;rsrrih@@@##########@@MS;rrsrri&@@@#########@@M2rrssrriG@@@#M#@@2.                
+              r#@@#HX5G#@BXisi2A@#h23H@@####A55G##H2iss2B@M923B@####HX5G#@B3iri2A@#hXhH#@@2.                
+              r#@@@#2;;s3A9SiS525r;s&#@@##@@#Xr;s3&XSii22S;;s&#@###@#X;:s3&9SiS225r;sA#@@@2.                
+              r#@@@@@B5;;;sSSir;;rX#@@@####@@@M5;;;sSSir;;r3#@@####@@@H5;;;sS5Ss;;rX#@@@@@2.                
+              r#@#AA#@@#G2iiiSSX&#@#HM####MAA#@@#G5iiiiSXA#@#BM####AA#@@Mh2iiiiSXGM@#HH#@@2.                
+              r@@@9sr2M@@#XsiSXB#H5rsh#@@@M3sr5M@@B2siS3M#H2rs&@@@#GsrX#@@MXisS3H#H2rs9#@@2.                
+              r#@@@Hi;;ri5SiSSisr;;SH@@@#@@#&s;;riSSiSSisr;;i&#@@@@@Ai;;ri55Siiisr;;SH@@@@2.                
+              r#@@@@M3sr;rsSSisrs2H@@@####@@@#hs;rriSSSsrs2A@@@###@@@M2rr;rsSSiiss2H@@@@@@2.                
+              r#@@@@@@@#&2iiiii9#@@@@#####@@@@@@#G5iiii5A@@@@@#####@@@@@#A2iiiiS9#@@@@##@@2.                
+              r#@@#@@@@@@#3ssi2H@@@@#######@@@@@@@#XissX#@@@@#######@@@@@@@hsri2H@@@@###@@X.                
+              s@@@@@@@@@@@ASss2B@@@@@@@@@@@@@@@@@@@ASsr2#@@@@@@@@@@@@@@@@@@HiriXB@@@@@@@@@3,                
+              :hB&h99GG&HA2srrs2GAG99hhhh9hhhGGGAA&2sr;s2G&hhhGGGGhh99hh&AA2srrs2h&Gh99hHAr                 
+              :3Hh333939G&AAAGhh9h93333hG&AAAAAAAAA&AA&h99hh&AAAAAAAG9339h&AAA&h9hh93339A&r                 
+              r#@@@@@@@@@@@@@@@@@@@@@@@@@MAGh9hA#@@@@@@@@@@@MAhh9GAM@@@@@@@@@@@@@@@@@@@@@@2.                
+              s@@@@@@@@@@@@@@@@@@@@@@@#A2issiirri3#@@@@@@@H2srsiissiXH@@@@@@@@@@@@@@@@@@@@3,                
+              r#@@#################@#9r;r2A#@@#&i;r2M@@@A5rrSA@@@#ASrrSA@@@#############@@X.                
+              r#@@##################&irX#@@@@@@@@Hs;sA#&sr2@@@@@@@@@Bi;SB@@#############@@2.                
+              r#@@###############@@HXsSB@@@B3SX#@@Birrssi3@@@H25&#@@@Gsi&#@@############@@2.                
+              r#@@###############@@HXs5B@@@#hs;sA@@B2r;sh@@@Xr;iA@@@@Aiih#@@############@@2.                
+              r#@@###############@@@HirSH@@@@hrrX@@@hs;iA@@#2riA@@@@Air5H@@#############@@2.                
+              r#@@################@@@H5r;rS25iS&@@#G25Si5G@@@Gisi5ir;s3M@@##############@@2.                
+              r#@@##########@@@@@@@@@@@MhX2XGM@@@M5r2#@As;X@@@@A3223A@@@@@@@@@@@@@######@@2.                
+              r#@@##########Bh223hAH#@@@@@@@@@#A2siXM@@@&iri3B#@@@@@@@@#BA&9X23A#@@#####@@2.                
+              r#@@########M9s:::::;;rrsS5222ir;::rA@@92A@@X;:;rsS222Sirrr;;::::;SA#@####@@2.                
+              r#@@#########A2srrssisiiS2222225isrs3MB9X&##3rriS22XX225Siiissrrrs2A######@@2.                
+              r#@@########@@@@BB#@@@@@@@@@#@@@@@B2rrh@@@9ss9#@@@@##@@@@@@@@@#BB@@@@#####@@2.                
+              r#@@########@@@@@@@@@@@@Mh5isi5h#@@@&siGHG55M@@@B35isi2A@@@@@@@@@@@#######@@2.                
+              r#@@#########@@@@@@@@@#Xr;s3BMhssX#@@A5rrih#@@Air5A#H2r;sG@@@@@@@@########@@2.                
+              r#@@##################hssh@@@@@hsr3@@#Xr;sA@@#5rSH@@@@#2riA#@@############@@2.                
+              r#@@###############@#A2s2#@@@#3sr2M@@GSsrs2H@@H5riG@@@@Ais9M@@############@@2.                
+              r#@@###############@@#GiiA@@@#HAM@@@Aii33SsSB@@@H&A#@@@GsiA#@@############@@2.                
+              r#@@################@@#5;rh#@@@@@@#Xrr3@@#S;rG@@@@@@@#hsrX#@@#############@@2.                
+              r#@@################@@@#Xr;r2hGhXSrrSH@@@@#9r;r53hhXSrri&#@@##############@@X,                
+              ;#@@#################@@@@M3SsrrrriXA@@@@@@@@#hSsrrrri2&#@@@###############@@2.                
+              :A@@##################@@@@@@#BAH#@@@@@####@@@@@@MHHM@@@@@@################@#s.                 
+              .2#@@###################@@@@@@@@@@@@#######@@@@@@@@@@@@@##################@@M;                 
+               :h@@@#####################@@@@@@####TEAM#####@@@@@@####################@@#9:                 
+                ;#@@@########Patrick#Kuti####Michael#Philips####Deborah#Allah#########@@3,                  
+                 :h@@@@@##########Gilbert#Gadzekpo#####Ian#Allotey#################@@@@B;                   
+                   rM@@@@@@@@@#######Alex#Tenkorang#####Emmanuel##Asare#####@@@@@@@@#5.                    
+                     ,s&@@@@@@@@@@@@@################################@@@@@@@@@@@@@Ai:                       
+         ...              ,;i3H@@@@@@@@@@@@@#################@@@@@@@@@@@@M&92s;:.          .:::.            
+      ,;r;:::::,.               .:;rs59A#@@@@@@@@@#######@@@@@@A3ir;;:..               .,::,,::;r;.         
+     :rrrssr;;iXi,                       .,;i2A#@@@@@@@@@#A2r:.                       ,s25r;;;;rs;,         
+     :r;::;:,.:;;.                             .;i&#@@H5;.                     ... .   ,::,,::;;sr:         
+     .r2S;,...    ..,,..                           ,;:                        ......,,.   ...,;SG2:         
+      ;2Ah2isr;rS2s:.,:;;rr;.                                               :rir;:. ,i92issi5X9h9s.         
+      ,SA&99h&&AHhr..;h@@@@@5,                                             ,2@@@@#S..rX&Ahhh93XXS;          
+       rX3X33393G3;.,r5399Gh2s;::,,.                                 ..,,,:r5XX23hs..;5993XXX22Sr,          
+         ,;sS5229X;..;s2&M@#M#@@###H&9X25isssrrrrrrrrrrrrrrsssssiiS2XGAHBMMAh&BMBGr. :s2X2Ssr:,             
+                 .  .rS3M@@@@##@@@@@@@@@@@@#HH#@@@@#UGCSMM#@@@@@@@##@@@@@@@#AB@@@Mi,                        
+                     :riXh&AAGhAM####@@@@@@#BM@@@@@@@@#@@@MM@@@@@@@@@@@@@@#MH&9X2s:.                        
+                            .,;rsii5Xh&&&AA&GGGh&ABBBBBBMBAAHBAAHH&9X5Sis;:,.                               
+                                        .,,:::,,,::::;;:::::::::,.                                          
+ -->
+
+
+<!--[if IE 7 ]><html class="ie ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+  
+<!-- Mirrored from www.ug.edu.gh/freshers/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 09:25:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="http://www.ug.edu.gh/freshers/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Freshers Webpage | Freshers Webpage</title>
+    <style type="text/css" media="all">
+@import url("http://www.ug.edu.gh/freshers/modules/system/system.base.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/system/system.menus.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/system/system.messages.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/system/system.theme.css?pe9yr4");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.ug.edu.gh/freshers/modules/comment/comment.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/sites/all/modules/date/date_api/date.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/field/theme/field.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/node/node.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/search/search.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/modules/user/user.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/sites/all/modules/views/css/views.css?pe9yr4");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.ug.edu.gh/freshers/sites/all/modules/ctools/css/ctools.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/sites/all/modules/nice_menus/css/nice_menus.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/sites/all/modules/nice_menus/css/nice_menus_default.css?pe9yr4");
+@import url("http://www.ug.edu.gh/freshers/sites/freshers/modules/layer_slider/css/layerslider.css?pe9yr4");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/stylesheets/ug-style-min.css?pe9yr4");
+</style>
+	
+
+
+      
+
+      <!-- menu font -->
+            <style type="text/css">
+        .custom_menu #menu > ul > li > a,#menu {
+          font-family:Open Sans;
+                  }
+      </style>
+      <!-- // menu font -->
+
+      <!-- menu font size -->
+            <style type="text/css">
+        #menu > ul > li > a{
+          font-size: 15px ;
+        }
+        #menu > ul > li ul > li > a{
+          font-size: 14px ;
+        }
+      </style>
+      <!-- // menu font size -->
+
+
+      <!-- main color -->
+            <style type="text/css">
+        a:hover, a:focus{
+          color: #0AD1E5 ;
+        }
+        .button:hover,
+        a:hover.button,
+        button:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,	
+        input[type="button"]:hover,
+        .button_hilite, 
+        a.button_hilite,
+        .button_hilite,
+        a.button_hilite{
+          color: #FFF;
+          background-color: #0AD1E5;
+        }
+        .section_big_title h1 strong,
+        .section_featured_texts h3 a:hover,
+        .breadcrumb a:hover,
+        .post_meta a:hover,
+        #footer a:hover {
+          color: #0AD1E5 ;
+        }
+        .portfolio_filter div.current,
+        .next:hover,.prev:hover,
+        .pagination .links a:hover,
+        .info h2, 
+        .h2.ls-s2,
+        jcarousel-next-horizontal:hover, 
+        .jcarousel-prev-horizontal:hover{
+          background-color: #0AD1E5 ;
+        }
+        .footer_pic img:hover{
+          border: 1px solid #0AD1E5;
+        }
+      </style>
+      <!-- // main color -->
+
+      <!-- heading font -->
+            <style type="text/css">
+        h1, h2, h3, h4, h5, .title, .section_big_title h1, .heading, #footer h3,
+        .page_heading h1{
+          font-family: Open Sans;
+                  }
+      </style>
+      <!-- heading font -->
+
+      <!-- button font -->
+            <style type="text/css">
+        .button, a.button,	button,	input[type="submit"], input[type="reset"], input[type="button"]{
+          font-family: Open Sans;
+                  }
+      </style>
+      <!-- // button fonts -->
+
+      <!-- body font -->
+            <style typ="text/css">
+        body{
+          font-family: Open Sans;
+        }
+      </style>
+      <!-- // body font -->
+
+      <!-- body background and color -->
+            <style type="text/css">
+        body{
+          background-image: url(http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/styler/bgrs/a_furley_bg.png);        }
+      </style>
+      <!-- // body bg -->
+
+  </head>
+  <body class="html front not-logged-in no-sidebars page-node" >
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+         <div class="alert_block">
+	 	</div>
+<div id="wrapper" class="not-home-page">
+	<!--<div class="alert_block">
+	 	</div>-->
+  <div class="container">
+
+    <div class="header clearfix row">
+		
+              <div class="eight columns header_left">
+          <a href="http://www.ug.edu.gh/freshers/"><img src="http://www.ug.edu.gh/freshers/sites/freshers/files/logo_freshers.png" alt="Home" /></a>
+        </div>
+      
+      <div class="eight columns">
+        <div class="header_right">
+          
+
+          <div class="header_soc_search clearfix">
+                          <div class="header_search">
+                <form class="search" action="http://www.ug.edu.gh/freshers/" method="post" id="searchform" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <button class="button_search"></button><div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="s">Search </label>
+ <input title="Enter the terms you wish to search for." class="search-text-box form-text" type="text" id="s" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-gTY-8VdMD4P8ZtgdA3yQboEVqy1uxf-B9uJziEzspwU" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>              </div>
+                        
+          </div>				
+        </div>
+      </div>
+    </div>
+
+    <!--begin of top menu-->
+    <div class="top_header">
+    
+            <div class="header_contacts clearfix">
+              <div class="region region-top-menu">
+    <div id="block-nice-menus-1" class="block block-nice-menus">
+
+    
+  <div class="content">
+    <ul class="nice-menu nice-menu-down nice-menu-menu-top-menu" id="nice-menu-1"><li class="menu-437 menu-path---pmis-1ugedugh7771-pls-prodi03-w99pkgmi-login first odd "><a href="http://pmis-1.ug.edu.gh:7771/pls/prodi03/w99pkg.mi_login" target="_blank">MIS Web</a></li>
+<li class="menu-436 menu-path-mailugedugh  even "><a href="http://mail.ug.edu.gh/" target="_blank">Staff Webmail</a></li>
+<li class="menu-448 menu-path-mailgooglecom-a-stugedugh  odd last"><a href="http://mail.google.com/a/st.ug.edu.gh" target="_blank">Student Webmail</a></li>
+</ul>
+  </div>
+</div>
+  </div>
+            </div>
+
+    </div>
+    <!--end of top menu-->
+
+    
+        <!--            <div class="row">
+        <div class="sixteen columns">
+
+          
+                                <div class="page_heading">
+              <h1>Welcome to Freshers Webpage</h1>
+            </div>
+                            </div>		
+      </div>
+    -->
+
+    <!-- Main Navigation -->
+    <div class="row no_bm">
+      <div class="dark_menu sixteen columns">
+        <div id="menu" class="">
+          <ul id="responsive"  class="nav_simple sf-menu main-menu sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-1 sf-single-items-5"><li><a href="https://www.ug.edu.gh/" target="_blank" title="Go to university homepage"><span class="home_icon"></span></a></li><li id="menu-590-1" class="first odd sf-item-1 sf-depth-1 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/" class="sf-depth-1 ">Home</a></li><li id="menu-257-1" class="middle even sf-item-2 sf-depth-1 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/welcome-university-ghana" class="sf-depth-1 ">Welcome</a></li><li id="menu-454-1" class="middle odd sf-item-3 sf-depth-1 mainMenu sf-no-children"><a href="http://admission.ug.edu.gh/ugadmitted/" target="_blank" class="sf-depth-1 ">Admission Status</a></li><li id="menu-462-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 mainMenu parent menuparent has-dropdown"><a href="http://www.ug.edu.gh/freshers/" class="sf-depth-1  mainMenu parent menuparent has-dropdown active">Get Started</a><ul class="dropdown"><li id="menu-589-1" class="first odd sf-item-1 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/accommodation-campus" class="sf-depth-2 ">Residential Application</a></li><li id="menu-581-1" class="middle even sf-item-2 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/steps-online-registration-0" class="sf-depth-2 ">Academic Registration</a></li><li id="menu-582-1" class="middle odd sf-item-3 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/orientation-session" class="sf-depth-2 ">Orientation Session</a></li><li id="menu-586-1" class="last even sf-item-4 sf-depth-2 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/registration-problem" class="sf-depth-2 ">Registration Problem</a></li></ul></li><li id="menu-770-1" class="middle odd sf-item-5 sf-depth-1 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/freshers/payment-fees" class="sf-depth-1 ">Payment of Fees</a></li><li id="menu-591-1" class="last even sf-item-6 sf-depth-1 mainMenu sf-no-children"><a href="http://www.ug.edu.gh/aad/Students-Handbook" target="_blank" class="sf-depth-1 ">Handbooks/ID Cards</a></li></ul>        </div>
+
+      </div>
+    </div>
+    <!-- Main Navigation::END -->
+
+          <div class="h15 clear"></div>
+      <div class="row no_bm">
+        <div id="slider_holder" class="sixteen columns">
+            <div class="region region-slider">
+    <div id="block-layer-slider-1" class="block block-layer-slider">
+
+    
+  <div class="content">
+    <div id="layerslider_1" style="width: 900px; height: 250px; margin: 0px auto; "><div class="ls-layer"  style="slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;"><img class="ls-s2"  src="http://www.ug.edu.gh/freshers/sites/freshers/files/freshers-page_2018.jpg"  style="position: absolute; top: px; left: px;    durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0; showuntil : 0; "></div></div>  </div>
+</div>
+  </div>
+        </div>
+        <!-- Sequence Slider::END-->
+      </div>
+    
+    
+
+    <!-- Footer -->
+    <div id="footer" class="container">
+              <div class="row footer_inside">
+
+          <div class="four columns f1" style="width:216px;">
+              <div class="region region-footer-firstcolumn">
+     <div id="block-block-10" class="block block-block">
+    
+    <h3>2018/2019 ADMISSION LIST</h3>
+
+    
+  <div class="content">
+    <p><img alt="" src="http://www.ug.edu.gh/freshers/sites/freshers/files/admission_list.png" style="width: 100%;" /></p>
+<div class="bt-introtext" style="vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;">Lists of students admitted to various programmes in the University of Ghana for the 2018/2019 acad...</div>
+<p class="readmore" style="margin-top: 10px; margin-bottom: 10px; vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;"><a href="http://www.ug.edu.gh/freshers/20142015-admission-list-read"><font color="#333333"><span style="padding-left: 15px; vertical-align: top; background-image: url(http://www.ug.edu.gh/campuslife/templates/ja_mendozite/images/readmore.png); background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0% 50%; background-repeat: no-repeat;">Read more</span></font></a></p>
+  </div>
+</div>
+  </div>
+          </div>
+
+          <!--  1/4 Columns -->
+          <div class="four columns f2">
+              <div class="region region-footer-secondcolumn">
+     <div id="block-block-2" class="block block-block">
+    
+    <h3>PAYMENT OF FEES</h3>
+
+    
+  <div class="content">
+    <p><img alt="" src="http://www.ug.edu.gh/freshers/sites/freshers/files/fees1.jpg" style="width: 100%;" /></p>
+<div class="bt-introtext" style="vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;">
+<div class="bt-introtext" style="vertical-align: top; line-height: 19.2000007629395px;">All University fees payable by students are to be paid to appropriate University </div>
+<p class="readmore" style="margin-top: 10px; margin-bottom: 10px; vertical-align: top; line-height: 19.2000007629395px;"><a href="http://www.ug.edu.gh/freshers/payment-fees"><font color="#333333"><span style="padding-left: 15px; vertical-align: top; background-image: url(http://www.ug.edu.gh/campuslife/templates/ja_mendozite/images/readmore.png); background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0% 50%; background-repeat: no-repeat;">Read more</span></font></a></p>
+</div>
+  </div>
+</div>
+  </div>
+          </div>
+
+          <!-- 1/4 Columns -->
+          <div class="four columns f3">
+              <div class="region region-footer-thirdcolumn">
+     <div id="block-block-1" class="block block-block">
+    
+    <h3>STEPS FOR REGISTRATION</h3>
+
+    
+  <div class="content">
+    <p><img alt="" src="http://www.ug.edu.gh/freshers/sites/freshers/files/registeration.png" style="width: 100%;" /></p>
+<div class="bt-introtext" style="vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;">Admitted students should follow the instructions below to print out provisional admission letters,...</div>
+<p class="readmore" style="margin-top: 10px; margin-bottom: 10px; vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;"><a href="http://www.ug.edu.gh/freshers/steps-online-registration-0"><font color="#333333"><span style="padding-left: 15px; vertical-align: top; background-image: url(http://www.ug.edu.gh/campuslife/templates/ja_mendozite/images/readmore.png); background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0% 50%; background-repeat: no-repeat;">Read more</span></font></a></p>
+  </div>
+</div>
+  </div>
+            <div class="clearfix"></div>
+          </div>
+
+          <!-- 1/4 Columns -->
+          <div class="four columns f4 " style="margin-right:0px;">
+              <div class="region region-footer-fourthcolumn">
+     <div id="block-block-5" class="block block-block">
+    
+    <h3>ACCOMMODATION</h3>
+
+    
+  <div class="content">
+    <p><img alt="" src="http://www.ug.edu.gh/freshers/sites/freshers/files/hall.jpg" style="width: 100%;" /></p>
+<div class="bt-introtext" style="vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;">The date for the online residential application for undergraduate students seeking accommodation on the main campus will be announced soon<b>.</b></div>
+<p class="readmore" style="margin-top: 10px; margin-bottom: 10px; vertical-align: top; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 19.2000007629395px;"><a href="http://www.ug.edu.gh/freshers/accommodation-campus"><span id="cke_bm_303S" style="display: none;"> </span><span id="cke_bm_302S" style="display: none;"> </span><span id="cke_bm_301S" style="display: none;"> </span><span id="cke_bm_300S" style="display: none;"> </span><span id="cke_bm_299S" style="display: none;"> </span><span id="cke_bm_298S" style="display: none;"> </span><span id="cke_bm_297S" style="display: none;"> </span><font color="#333333"><span style="padding-left: 15px; vertical-align: top; background-image: url(http://www.ug.edu.gh/campuslife/templates/ja_mendozite/images/readmore.png); background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0% 50%; background-repeat: no-repeat;"><span id="cke_bm_304S" style="display: none;"> </span><span id="cke_bm_305S" style="display: none;"> </span><span id="cke_bm_306S" style="display: none;"> </span> </span> Read more<span id="cke_bm_317E" style="display: none;"> </span> </font></a></p>
+  </div>
+</div>
+  </div>
+          </div>
+
+            <!-- 1/4 Columns -->
+          <!-- <div class="three columns f5">
+                      </div> -->
+
+
+        
+      </div> 
+      <div class="clear"></div>
+
+      <div class="footer_btm">
+        <div class="footer_btm_inner">
+
+                                <div id="powered"><a href="http://www.ug.edu.gh/" target="_blank">University of Ghana</a> © 2014</div>
+                  </div>	  
+      </div>
+    </div>
+	
+    <!-- Footer::END -->
+
+  </div>
+      
+
+    
+      <!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="/freshers/sites/all/themes/distancedu/stylesheets/sequencejs-theme.sliding-horizontal-parallax-ie.css" /><![endif]-->
+      <script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/misc/drupal.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/modules/nice_menus/js/jquery.bgiframe.js?v=2.1"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/modules/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/libraries/superfish/superfish.js?v=v1.4.8"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/modules/nice_menus/js/nice_menus.js?v=1.0"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	jQuery(document).ready(function() { 
+		jQuery("#layerslider_1").layerSlider({ 
+			width : '900px',
+			height : '250px',
+			responsive : true,
+			responsiveUnder : 0,
+			sublayerContainer : 0,
+			autoStart : true,
+			pauseOnHover : true,
+			firstLayer : 1,
+			animateFirstLayer : true,
+			randomSlideshow : false,
+			twoWaySlideshow : true,
+			keybNav : true,
+			touchNav : true,
+			imgPreload : true,
+			navPrevNext : true,
+			navStartStop : true,
+			navButtons : true,
+			hoverPrevNext : true,
+			hoverBottomNav : false,
+			thumbnailNavigation : 'hover',
+			tnWidth : 100,
+			tnHeight : 60,
+			tnContainerWidth : '60%',
+			tnActiveOpacity : 35,
+			tnInactiveOpacity : 100,
+			skin : 'aqua',
+			skinsPath : '/freshers/sites/freshers/modules/layer_slider/skins/',
+			globalBGColor : 'transparent',
+			yourLogo : false,
+			yourLogoStyle : 'left: 10px; top: 10px;',
+			yourLogoLink : false,
+			yourLogoTarget : '_self',
+			loops : 0,
+			forceLoopNum : true,
+			autoPlayVideos : true,
+			autoPauseSlideshow : 'auto',
+			youtubePreview : 'maxresdefault.jpg',
+			cbInit : function(element) { },
+			cbStart : function(data) { },
+			cbStop : function(data) { },
+			cbPause : function(data) { },
+			cbAnimStart : function(data) { },
+			cbAnimStop : function(data) { },
+			cbPrev : function(data) { },
+			cbNext : function(data) { }
+		});
+	});
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/freshers/modules/layer_slider/js/layerslider.jquery.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/freshers/modules/layer_slider/js/jquery-easing-1.3.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/jquery.easing.1.3.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/common.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/isotope.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/jquery.flexslider-min.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/jquery.prettyPhoto.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/jquery.jcarousel.min.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/jquery.tipsy.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/jquery.selectnav.js?pe9yr4"></script>
+<script type="text/javascript" src="http://www.ug.edu.gh/freshers/sites/all/themes/distancedu/js/aqua.js?pe9yr4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/freshers\/","pathPrefix":"","ajaxPageState":{"theme":"distancedu","theme_token":"rflRo5kceOQy5JrX0lnzG2jgLFcaYBCTuuZoilf8TBM","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"0":1,"sites\/freshers\/modules\/layer_slider\/js\/layerslider.jquery.js":1,"sites\/freshers\/modules\/layer_slider\/js\/jquery-easing-1.3.js":1,"sites\/all\/themes\/distancedu\/js\/jquery.easing.1.3.js":1,"sites\/all\/themes\/distancedu\/js\/common.js":1,"sites\/all\/themes\/distancedu\/js\/isotope.js":1,"sites\/all\/themes\/distancedu\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/distancedu\/js\/jquery.prettyPhoto.js":1,"sites\/all\/themes\/distancedu\/js\/jquery.jcarousel.min.js":1,"sites\/all\/themes\/distancedu\/js\/jquery.tipsy.js":1,"sites\/all\/themes\/distancedu\/js\/jquery.selectnav.js":1,"sites\/all\/themes\/distancedu\/js\/aqua.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/freshers\/modules\/layer_slider\/css\/layerslider.css":1,"sites\/all\/themes\/distancedu\/stylesheets\/ug-style-min.css":1}},"nice_menus_options":{"delay":800,"speed":"slow"},"urlIsAjaxTrusted":{"\/freshers\/":true}});
+//--><!]]>
+</script>
+      <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <!--  Fonts  -->
+
+	
+
+  </body>
+
+<!-- Mirrored from www.ug.edu.gh/freshers/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 09:25:13 GMT -->
+</html>
